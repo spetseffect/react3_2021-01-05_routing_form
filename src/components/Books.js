@@ -1,10 +1,11 @@
 import React from 'react';
+import { booksList } from '../data/books';
 
 export class Books extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			books: this.props.data
+			books: booksList
 		};
 	}
 
@@ -27,7 +28,6 @@ export class Books extends React.Component {
 		return (<>
 			<h2>Книги</h2>
 			<ul>{bookList}</ul>
-			<hr />
 		</>);
 	}
 }

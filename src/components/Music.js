@@ -1,10 +1,11 @@
 import React from 'react';
+import { musicList } from '../data/music';
 
 export class Music extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			musList: this.props.data
+			musList: musicList
 		};
 	}
 
@@ -39,7 +40,6 @@ export class Music extends React.Component {
 		return (<>
 			<h2>Музыка</h2>
 			<ul>{musList}</ul>
-			<hr />
 		</>);
 	}
 }

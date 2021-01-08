@@ -1,10 +1,11 @@
 import React from 'react';
+import { reciepts } from '../data/reciepts';
 
 export class Reciepts extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			reciepts: this.props.data
+			reciepts: reciepts
 		};
 	}
 
@@ -31,7 +32,6 @@ export class Reciepts extends React.Component {
 		return (<>
 			<h2>Рецепты</h2>
 			<ul>{recList}</ul>
-			<hr />
 		</>);
 	}
 }
